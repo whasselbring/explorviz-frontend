@@ -24,12 +24,12 @@ module.exports = function(environment) {
   };
 
   ENV['ember-simple-auth'] = {
-    routeAfterAuthentication: 'visualization',
-    routeIfAlreadyAuthenticated: 'visualization'
+    routeAfterAuthentication: 'replay',
+    routeIfAlreadyAuthenticated: 'replay'
   };
 
   if (environment === 'development') {
-    ENV.APP.API_ROOT = 'http://localhost:8081';
+    ENV.APP.API_ROOT = 'http://localhost:8083';
   }
 
   if (environment === 'test') {

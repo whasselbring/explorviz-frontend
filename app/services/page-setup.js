@@ -20,7 +20,7 @@ export default Service.extend({
   * @property navbarRoutes
   * @type Array
   */
-  navbarRoutes:["visualization", "tutorial", "replay", "discovery"],
+  navbarRoutes:["replay", "discovery"],
 
 
   /**
