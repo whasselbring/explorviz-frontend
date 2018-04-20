@@ -120,8 +120,8 @@ export default Component.extend(Evented, THREEPerformance, {
       self.set('animationFrameId', animationId);
 
       if(config.environment === "development" || config.environment === "akr") {
-        self.get('threexStats').update(self.get('webglrenderer'));
-        self.get('stats').begin();
+        //self.get('threexStats').update(self.get('webglrenderer'));
+        //self.get('stats').begin();
       }
 
       self.get('webglrenderer').render(self.get('scene'), self.get('camera'));
