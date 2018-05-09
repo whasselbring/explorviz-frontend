@@ -1,16 +1,23 @@
 import Service from '@ember/service';
 import AlertifyHandler from 'explorviz-frontend/mixins/alertify-handler';
 import { inject as service } from '@ember/service';
-import { later } from '@ember/runloop'; 
+import { computed} from '@ember/object';
+
+import { later } from '@ember/runloop';
 
 export default Service.extend(AlertifyHandler, {
 
   store: service(),
+  session: service(),
   timestampRepo: service('repos/timestamp-repository'),
+
+isAuthenticated: computed.oneWay("session.isAuthenticated"),
 
   init() {
     this._super(...arguments);
-    this.receiveUploadedObjects();
+    if(this.get("isAuthenticated") === true){
+      this.receiveUploadedObjects();
+    }
   },
 
 
