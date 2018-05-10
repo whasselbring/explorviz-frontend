@@ -3,7 +3,13 @@ import {inject as service} from '@ember/service';
 import $ from 'jquery';
 
 /* global c3 */
-
+/**
+*  Similar to the {{#crossLink "time-shift"}}{{/crossLink}}, displays uploaded landscapes
+*{{#crossLink "landscape-uploader"}}{{/crossLink}}.
+*
+* @class Timestamp-Versionbar-Component
+* @extends Ember.Component
+*/
 export default Component.extend({
 
   timestampRepo: service("repos/timestamp-repository"),

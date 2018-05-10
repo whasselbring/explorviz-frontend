@@ -11,6 +11,7 @@ export default Component.extend(AlertifyHandler, FileSaverMixin, {
   renderingService: service("rendering-service"),
   reloadHandler: service("reload-handler"),
   viewImporter: service("view-importer"),
+  session: service(),
 
   actions: {
 
@@ -44,25 +45,27 @@ export default Component.extend(AlertifyHandler, FileSaverMixin, {
       this.get('reloadHandler').startExchange();
     },
 
+//download currentLandscape from backend server, the returned file is base64 encoded
     exportLandscape(){
       const currentLandscape = this.get('landscapeRepo.latestLandscape');
       const currentTimestamp = currentLandscape.get('timestamp');
       const currentCalls = currentLandscape.get('overallCalls');
+      const { access_token } = this.get('session.data.authenticated');
 
       this.get('ajax').raw(ENV.APP.API_ROOT + '/landscape/export/' + currentTimestamp, {
-        'id':this,
+        headers: { 'Authorization': `Basic ${access_token}` },
         dataType: 'text',
         options: {
           arraybuffer: true
         }
       }
-      ).then((content) => {
-        this.saveFileAs(currentTimestamp + '-' + currentCalls +'.expl', content.payload, 'text/plain');
-      }).catch((error) => {
-        this.debug('error in exportLandscape', error);
-      });
-    }
-
+    ).then((content) => {
+      this.saveFileAs(currentTimestamp + '-' + currentCalls +'.expl', content.payload, 'text/plain');
+    }).catch((error) => {
+      this.debug('error in exportLandscape', error);
+    });
   }
+
+}
 
 });

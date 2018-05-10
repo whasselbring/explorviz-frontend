@@ -5,7 +5,12 @@ import {task} from 'ember-concurrency';
 import AlertifyHandler from 'explorviz-frontend/mixins/alertify-handler';
 import ENV from 'explorviz-frontend/config/environment';
 
-
+/**
+*  Upload landscapes to backend and display uploaded landscapes in versionbar.
+*
+* @class Landscape-Uploader-Component
+* @extends Ember.Component
+*/
 export default Component.extend(AlertifyHandler, {
 
   store: service(),
