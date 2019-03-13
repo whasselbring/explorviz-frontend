@@ -1,5 +1,5 @@
 {
-      "imgUrl": "img/logo-fe.png",
+      "imgName": "logo-fe.png",
       "requiredExtensions": [
         "backend"
       ],
