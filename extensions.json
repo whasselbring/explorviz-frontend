@@ -1,7 +1,7 @@
 {
       "imgSrc": "logo-fe.png",
       "requiredExtensions": [
-        "backend"
+        "backend_master"
       ],
       "incompatibleExtensions": []
 }
