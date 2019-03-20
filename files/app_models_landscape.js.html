@@ -163,7 +163,7 @@
 import DS from &#x27;ember-data&#x27;;
 import BaseEntity from &#x27;./baseentity&#x27;;
 
-const { attr, belongsTo, hasMany } = DS;
+const { belongsTo, hasMany } = DS;
 
 /**
 * Ember model for a landscape.
@@ -177,8 +177,10 @@ const { attr, belongsTo, hasMany } = DS;
 export default BaseEntity.extend({
 
   timestamp: belongsTo(&#x27;timestamp&#x27;),
-  events: attr(),
-  exceptions: attr(),
+  
+  events: hasMany(&#x27;event&#x27;, {
+    inverse: null
+  }),
 
   systems: hasMany(&#x27;system&#x27;, {
     inverse: &#x27;parent&#x27;

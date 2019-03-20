@@ -282,6 +282,13 @@
             "fors": {},
             "namespaces": {}
         },
+        "app/models/event.js": {
+            "name": "app/models/event.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
         "app/models/landscape.js": {
             "name": "app/models/landscape.js",
             "modules": {},
@@ -1074,7 +1081,7 @@
             "module": "explorviz",
             "namespace": "",
             "file": "app/components/visualization/rendering/application-rendering.js",
-            "line": 19,
+            "line": 21,
             "description": "Renderer for application visualization.",
             "submodule": "visualization.rendering",
             "extends": "Rendering-Core-Component"
@@ -1090,7 +1097,7 @@
             "module": "explorviz",
             "namespace": "",
             "file": "app/components/visualization/rendering/landscape-rendering.js",
-            "line": 20,
+            "line": 21,
             "description": "Renderer for landscape visualization.",
             "submodule": "visualization.rendering",
             "extends": "Rendering-Core-Component"
@@ -1798,7 +1805,7 @@
         },
         {
             "file": "app/authenticators/authenticator.js",
-            "line": 85,
+            "line": 84,
             "description": "TODO",
             "itemtype": "method",
             "name": "authenticate",
@@ -1808,7 +1815,7 @@
         },
         {
             "file": "app/authenticators/authenticator.js",
-            "line": 125,
+            "line": 124,
             "description": "TODO",
             "itemtype": "method",
             "name": "invalidate",
@@ -1996,7 +2003,7 @@
         },
         {
             "file": "app/components/visualization/rendering/application-rendering.js",
-            "line": 137,
+            "line": 139,
             "description": "TODO",
             "itemtype": "method",
             "name": "cleanAndUpdateScene",
@@ -2006,7 +2013,7 @@
         },
         {
             "file": "app/components/visualization/rendering/application-rendering.js",
-            "line": 156,
+            "line": 158,
             "description": "TODO",
             "itemtype": "method",
             "name": "preProcessEntity",
@@ -2016,7 +2023,7 @@
         },
         {
             "file": "app/components/visualization/rendering/application-rendering.js",
-            "line": 169,
+            "line": 171,
             "description": "TODO",
             "itemtype": "method",
             "name": "populateScene",
@@ -2026,7 +2033,7 @@
         },
         {
             "file": "app/components/visualization/rendering/application-rendering.js",
-            "line": 410,
+            "line": 415,
             "description": "Draws an small black arrow",
             "params": [
                 {
@@ -2053,7 +2060,7 @@
         },
         {
             "file": "app/components/visualization/rendering/landscape-rendering.js",
-            "line": 46,
+            "line": 47,
             "description": "TODO",
             "itemtype": "method",
             "name": "initRendering",
@@ -2063,7 +2070,7 @@
         },
         {
             "file": "app/components/visualization/rendering/landscape-rendering.js",
-            "line": 125,
+            "line": 126,
             "description": "TODO",
             "itemtype": "method",
             "name": "cleanAndUpdateScene",
@@ -2073,7 +2080,7 @@
         },
         {
             "file": "app/components/visualization/rendering/landscape-rendering.js",
-            "line": 140,
+            "line": 141,
             "description": "TODO",
             "itemtype": "method",
             "name": "populateScene",
@@ -2204,6 +2211,13 @@
             "class": "DrawEdgeEntity-Model",
             "module": "explorviz",
             "submodule": "model.util"
+        },
+        {
+            "file": "app/models/event.js",
+            "line": 5,
+            "description": "<<<<<<< HEAD\n * Ember model for an event occurring in the landscape.\n *\n * @class Event-Model\n * @extends BaseEntity-Model\n *\n * @module explorviz\n * @submodule model.meta",
+            "class": "Landscape-Model",
+            "module": "explorviz"
         },
         {
             "file": "app/services/repos/timestamp-repository.js",
@@ -2339,5 +2353,10 @@
             "module": "explorviz"
         }
     ],
-    "warnings": []
+    "warnings": [
+        {
+            "message": "Missing item type\n<<<<<<< HEAD\n * Ember model for an event occurring in the landscape.\n *\n * @class Event-Model\n * @extends BaseEntity-Model\n *\n * @module explorviz\n * @submodule model.meta",
+            "line": " app/models/event.js:5"
+        }
+    ]
 }

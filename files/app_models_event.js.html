@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>app/controllers/visualization.js - ExplorViz Frontend</title>
+    <title>app/models/event.js - ExplorViz Frontend</title>
     <link rel="stylesheet" href="">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -155,81 +155,33 @@
                 <div id="docs-main">
                     <div class="content">
 <div class="page-header">
-    <h1>app/controllers/visualization.js <small>File</small></h1>
+    <h1>app/models/event.js <small>File</small></h1>
 </div>
 
 <div class="file">
     <pre class="prettyprint linenums">
-import Controller from &#x27;@ember/controller&#x27;;
-import { inject as service } from &#x27;@ember/service&#x27;; 
-import { computed } from &#x27;@ember/object&#x27;;
-import AlertifyHandler from &#x27;explorviz-frontend/mixins/alertify-handler&#x27;;
+import BaseEntity from &#x27;./baseentity&#x27;;
+import DS from &#x27;ember-data&#x27;;
+const { attr } = DS;
 
 /**
-* TODO
-*
-* @class Visualization-Controller
-* @extends Ember.Controller
-*
-* @module explorviz
-* @submodule visualization
-*/
-export default Controller.extend(AlertifyHandler, {
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+ * Ember model for an event occurring in the landscape.
+ *
+ * @class Event-Model
+ * @extends BaseEntity-Model
+ *
+ * @module explorviz
+ * @submodule model.meta
+ */
+export default BaseEntity.extend({
 
-  renderingService: service(&quot;rendering-service&quot;),
-  landscapeRepo: service(&quot;repos/landscape-repository&quot;),
-  landscapeListener: service(&quot;landscape-listener&quot;),
-  additionalData: service(&quot;additional-data&quot;),
-  timestampRepo: service(&quot;repos/timestamp-repository&quot;),
+    timestamp: attr(&#x27;number&#x27;),
+    eventType: attr(&#x27;string&#x27;),
+    eventMessage: attr(&#x27;string&#x27;),
 
-  state: null,
+    isSelected: attr(&#x27;boolean&#x27;, {defaultValue: false}),
 
-  type: &#x27;landscape&#x27;,
-
-  showLandscape: computed(&#x27;landscapeRepo.latestApplication&#x27;, function() {
-    return !this.get(&#x27;landscapeRepo.latestApplication&#x27;);
-  }),
-
-
-  actions: {
-    resetView() {
-      this.get(&#x27;renderingService&#x27;).reSetupScene();
-    },
-
-    openLandscapeView() {
-      this.set(&#x27;landscapeRepo.latestApplication&#x27;, null);
-      this.set(&#x27;landscapeRepo.replayApplication&#x27;, null);
-    },
-
-    toggleTimeline() {
-      this.get(&#x27;renderingService&#x27;).toggleTimeline();
-    }
-    
-  },
-
-  showTimeline() {
-    this.set(&#x27;renderingService.showTimeline&#x27;, true);
-  },
-
-  hideVersionbar(){
-    this.set(&#x27;renderingService.showVersionbar&#x27;, false);
-  },
-
-  initRendering() {
-    this.get(&#x27;landscapeListener&#x27;).initSSE();
-    this.get(&#x27;additionalData&#x27;).on(&#x27;showWindow&#x27;, this, this.onShowWindow);
-  },
-
-  onShowWindow() {
-    this.get(&#x27;renderingService&#x27;).resizeCanvas();
-  },
-
-  // @Override
-  cleanup() {
-    this._super(...arguments);
-    this.get(&#x27;additionalData&#x27;).off(&#x27;showWindow&#x27;, this, this.onShowWindow);
-  }
-  
 });
 
     </pre>

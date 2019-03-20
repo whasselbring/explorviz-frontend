@@ -203,13 +203,12 @@ export default BaseAuthenticator.extend({
 
     return new RSVP.Promise(function(resolve, reject) {
 
-      function fulfill(token) {
-        const { rawUserData } = data;
-        const userRecord = self.get(&#x27;store&#x27;).push(rawUserData);
+      function fulfill() {
+        const userRecord = self.get(&#x27;store&#x27;).push(data.rawUserData);
         resolve({
-          access_token: token.token,
+          access_token: data.access_token,
           user: userRecord,
-          rawUserData: rawUserData
+          rawUserData: data.rawUserData
         });
       }
   

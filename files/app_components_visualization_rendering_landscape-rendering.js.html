@@ -163,6 +163,7 @@
 import RenderingCore from &#x27;./rendering-core&#x27;;
 import { inject as service } from &#x27;@ember/service&#x27;;
 import { getOwner } from &#x27;@ember/application&#x27;;
+import AlertifyHandler from &#x27;explorviz-frontend/mixins/alertify-handler&#x27;;
 
 import THREE from &quot;three&quot;;
 
@@ -188,7 +189,7 @@ import ImageLoader from &#x27;explorviz-frontend/utils/three-image-loader&#x27;;
 * @module explorviz
 * @submodule visualization.rendering
 */
-export default RenderingCore.extend({
+export default RenderingCore.extend(AlertifyHandler, {
 
   configuration: service(&quot;configuration&quot;),
 
@@ -812,6 +813,7 @@ export default RenderingCore.extend({
     this.get(&#x27;labeler&#x27;).drawTextLabels(self.get(&#x27;font&#x27;),
       self.get(&#x27;configuration&#x27;));
 
+    this.showAlertifyMessage(&quot;Landscape loaded&quot;);
 
   }, // END populateScene
 
