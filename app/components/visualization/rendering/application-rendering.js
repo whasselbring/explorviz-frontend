@@ -97,8 +97,9 @@ export default RenderingCore.extend(AlertifyHandler, {
 
       if (emberModelName === "clazz") {
         position = new THREE.Vector3(emberModel.get('positionX'), emberModel.get('positionY'), emberModel.get('positionZ'));
-        applyCameraPosition(this.get('application3D'), viewCenterPoint, this.get('camera'), position);
-        // Apply zoom
+        let commCenter = appToWorldPosition(this.get('application3D'), viewCenterPoint, this.get('camera'), position);
+        this.get('camera').position.set(commCenter.x, commCenter.y, commCenter.z);
+        // Apply static zoom
         this.get('camera').position.z += 25;
       } else if (emberModelName === "clazzcommunication") {
         let sourceClazz = emberModel.get('sourceClazz');
@@ -109,15 +110,32 @@ export default RenderingCore.extend(AlertifyHandler, {
           sourceClazz.get('positionY') + 0.5 * (targetClazz.get('positionY') - sourceClazz.get('positionY')),
           sourceClazz.get('positionZ') + 0.5 * (targetClazz.get('positionZ') - sourceClazz.get('positionZ')));
 
-        applyCameraPosition(this.get('application3D'), viewCenterPoint, this.get('camera'), position);
-        // Apply zoom
-        this.get('camera').position.z += 50;
+        // Set camera position
+        let commCenter = appToWorldPosition(this.get('application3D'), viewCenterPoint, this.get('camera'), position);
+        this.get('camera').position.set(commCenter.x, commCenter.y, commCenter.z);
+
+        /**
+         * Compute the distance from camera to communication by using law of tangents (apply zoom dynamically)
+         * This is based upon the triangle which consists of camera, source Clazz and center of communication
+         */
+        let sourceClazzPosition = this.get('application3D').localToWorld(
+          new THREE.Vector3(sourceClazz.get('positionX'), sourceClazz.get('positionY'), sourceClazz.get('positionZ')));
+        let targetClazzPosition = this.get('application3D').localToWorld(
+          new THREE.Vector3(targetClazz.get('positionX'), targetClazz.get('positionY'), targetClazz.get('positionZ')));
+
+        let oppositeSide = sourceClazzPosition.sub(targetClazzPosition).length() / 2;
+        // Roughly half of the fov
+        let alpha = 35;
+        let tangent = Math.tan(alpha);
+        let adjacentSide = oppositeSide / tangent;
+
+        this.get('camera').position.z += adjacentSide;
       } else {
         // Given model not yet supported for moving camera
         return;
       }
 
-      function applyCameraPosition(application, centerPoint, camera, position) {
+      function appToWorldPosition(application, centerPoint, camera, position) {
         position.sub(centerPoint);
         position.multiplyScalar(0.5);
 
@@ -130,8 +148,7 @@ export default RenderingCore.extend(AlertifyHandler, {
         application.getWorldPosition(appPosition);
         position.sub(appPosition);
 
-        // Move camera on to given position
-        camera.position.set(position.x, position.y, position.z);
+        return position;
       }
     };
 
