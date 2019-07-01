@@ -59,24 +59,6 @@
             "fors": {},
             "namespaces": {}
         },
-        "app/components/page-setup/navbar-octicons.js": {
-            "name": "app/components/page-setup/navbar-octicons.js",
-            "modules": {},
-            "classes": {
-                "Navbar-Octicons": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/components/page-setup/navbar-routes.js": {
-            "name": "app/components/page-setup/navbar-routes.js",
-            "modules": {},
-            "classes": {
-                "Navbar-Routes": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
         "app/components/visualization/page-setup/timeline/timeline.js": {
             "name": "app/components/visualization/page-setup/timeline/timeline.js",
             "modules": {},
@@ -149,6 +131,13 @@
             "fors": {},
             "namespaces": {}
         },
+        "app/instance-initializers/router.js": {
+            "name": "app/instance-initializers/router.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
         "app/mixins/alertify-handler.js": {
             "name": "app/mixins/alertify-handler.js",
             "modules": {},
@@ -163,209 +152,6 @@
             "modules": {},
             "classes": {
                 "ThreeJS-Performance-Mixin": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/agent.js": {
-            "name": "app/models/agent.js",
-            "modules": {},
-            "classes": {},
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/aggregatedclazzcommunication.js": {
-            "name": "app/models/aggregatedclazzcommunication.js",
-            "modules": {},
-            "classes": {
-                "AggregatedClazzCommunication-Model": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/application.js": {
-            "name": "app/models/application.js",
-            "modules": {},
-            "classes": {
-                "Application-Model": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/applicationcommunication.js": {
-            "name": "app/models/applicationcommunication.js",
-            "modules": {},
-            "classes": {
-                "ApplicationCommunication-Model": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/baseentity.js": {
-            "name": "app/models/baseentity.js",
-            "modules": {},
-            "classes": {
-                "BaseEntity-Model": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/clazz.js": {
-            "name": "app/models/clazz.js",
-            "modules": {},
-            "classes": {
-                "Clazz-Model": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/clazzcommunication.js": {
-            "name": "app/models/clazzcommunication.js",
-            "modules": {},
-            "classes": {
-                "ClazzCommunication-Model": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/component.js": {
-            "name": "app/models/component.js",
-            "modules": {},
-            "classes": {
-                "Component-Model": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/databasequery.js": {
-            "name": "app/models/databasequery.js",
-            "modules": {},
-            "classes": {
-                "DatabaseQuery-Model": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/draw3dnodeentity.js": {
-            "name": "app/models/draw3dnodeentity.js",
-            "modules": {},
-            "classes": {
-                "Draw3DNodeEntity-Model": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/drawableclazzcommunication.js": {
-            "name": "app/models/drawableclazzcommunication.js",
-            "modules": {},
-            "classes": {
-                "DrawableClazzCommunication-Model": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/drawedgeentity.js": {
-            "name": "app/models/drawedgeentity.js",
-            "modules": {},
-            "classes": {
-                "DrawEdgeEntity-Model": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/drawnodeentity.js": {
-            "name": "app/models/drawnodeentity.js",
-            "modules": {},
-            "classes": {
-                "DrawNodeEntity-Model": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/event.js": {
-            "name": "app/models/event.js",
-            "modules": {},
-            "classes": {},
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/landscape.js": {
-            "name": "app/models/landscape.js",
-            "modules": {},
-            "classes": {
-                "Landscape-Model": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/node.js": {
-            "name": "app/models/node.js",
-            "modules": {},
-            "classes": {
-                "Node-Model": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/nodegroup.js": {
-            "name": "app/models/nodegroup.js",
-            "modules": {},
-            "classes": {
-                "NodeGroup-Model": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/procezz.js": {
-            "name": "app/models/procezz.js",
-            "modules": {},
-            "classes": {
-                "Process-Model": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/system.js": {
-            "name": "app/models/system.js",
-            "modules": {},
-            "classes": {
-                "System-Model": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/timestamp.js": {
-            "name": "app/models/timestamp.js",
-            "modules": {},
-            "classes": {
-                "Timestamp-Model": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/trace.js": {
-            "name": "app/models/trace.js",
-            "modules": {},
-            "classes": {
-                "Trace-Model": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/tracestep.js": {
-            "name": "app/models/tracestep.js",
-            "modules": {},
-            "classes": {
-                "TraceStep-Model": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/models/user.js": {
-            "name": "app/models/user.js",
-            "modules": {},
-            "classes": {
-                "user-Model": 1
             },
             "fors": {},
             "namespaces": {}
@@ -451,38 +237,6 @@
             "fors": {},
             "namespaces": {}
         },
-        "app/services/repos/agent-repository.js": {
-            "name": "app/services/repos/agent-repository.js",
-            "modules": {},
-            "classes": {},
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/services/repos/landscape-repository.js": {
-            "name": "app/services/repos/landscape-repository.js",
-            "modules": {},
-            "classes": {
-                "Landscape-Repository-Service": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/services/repos/timestamp-repository.js": {
-            "name": "app/services/repos/timestamp-repository.js",
-            "modules": {},
-            "classes": {
-                "Timestamp-Repository-Service": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/services/visualization/application/highlighter.js": {
-            "name": "app/services/visualization/application/highlighter.js",
-            "modules": {},
-            "classes": {},
-            "fors": {},
-            "namespaces": {}
-        },
         "app/services/configuration.js": {
             "name": "app/services/configuration.js",
             "modules": {},
@@ -492,36 +246,9 @@
             "fors": {},
             "namespaces": {}
         },
-        "app/services/page-setup.js": {
-            "name": "app/services/page-setup.js",
-            "modules": {},
-            "classes": {
-                "Page-Setup-Service": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
         "app/services/reload-handler.js": {
             "name": "app/services/reload-handler.js",
             "modules": {},
-            "classes": {},
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/utils/application-rendering/foundation-builder.js": {
-            "name": "app/utils/application-rendering/foundation-builder.js",
-            "modules": {},
-            "classes": {
-                "foundation-builder": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/utils/helpers/threejs-helpers.js": {
-            "name": "app/utils/helpers/threejs-helpers.js",
-            "modules": {
-                "util": 1
-            },
             "classes": {},
             "fors": {},
             "namespaces": {}
@@ -557,15 +284,15 @@
                 "network": 1,
                 "explorviz": 1,
                 "security": 1,
-                "page": 1,
                 "visualization.rendering": 1,
+                "page": 1,
                 "settings": 1,
                 "visualization": 1,
+                "ember": 1,
+                "visualization.timeshift": 1,
                 "model": 1,
                 "model.meta": 1,
-                "model.util": 1,
-                "ember": 1,
-                "visualization.timeshift": 1
+                "model.util": 1
             },
             "classes": {},
             "fors": {},
@@ -612,26 +339,22 @@
             "submodules": {
                 "network": 1,
                 "security": 1,
-                "page": 1,
                 "visualization.page-setup.timeline": 1,
                 "visualization.rendering": 1,
+                "page": 1,
                 "settings": 1,
                 "visualization": 1,
+                "visualization.timeshift": 1,
                 "model": 1,
                 "model.meta": 1,
-                "model.util": 1,
-                "util": 1,
-                "visualization.timeshift": 1
+                "model.util": 1
             },
             "elements": {},
             "classes": {
                 "Timestamp-Adapter": 1,
-                "AggregatedClazzCommunication-Model": 1,
-                "System-Model": 1,
+                "Alertify-Handler": 1,
                 "Landscape-Adapter": 1,
                 "Authenticator": 1,
-                "Navbar-Octicons": 1,
-                "Navbar-Routes": 1,
                 "Timeline-Component": 1,
                 "Application-Rendering-Component": 1,
                 "Landscape-Rendering-Component": 1,
@@ -640,26 +363,7 @@
                 "Application-Controller": 1,
                 "Configuration-Controller": 1,
                 "Visualization-Controller": 1,
-                "Alertify-Handler": 1,
                 "ThreeJS-Performance-Mixin": 1,
-                "Application-Model": 1,
-                "ApplicationCommunication-Model": 1,
-                "BaseEntity-Model": 1,
-                "Clazz-Model": 1,
-                "ClazzCommunication-Model": 1,
-                "Component-Model": 1,
-                "DatabaseQuery-Model": 1,
-                "Draw3DNodeEntity-Model": 1,
-                "DrawableClazzCommunication-Model": 1,
-                "DrawEdgeEntity-Model": 1,
-                "DrawNodeEntity-Model": 1,
-                "Landscape-Model": 1,
-                "Node-Model": 1,
-                "NodeGroup-Model": 1,
-                "Timestamp-Model": 1,
-                "Trace-Model": 1,
-                "TraceStep-Model": 1,
-                "user-Model": 1,
                 "Application-Route": 1,
                 "Badroute-Route": 1,
                 "Configuration-Route": 1,
@@ -669,16 +373,12 @@
                 "Application-Serializer": 1,
                 "Landscape-Serializer": 1,
                 "System-Serializer": 1,
-                "Landscape-Repository-Service": 1,
-                "Timestamp-Repository-Service": 1,
-                "Configuration-Service": 1,
-                "Page-Setup-Service": 1,
-                "foundation-builder": 1
+                "Configuration-Service": 1
             },
             "fors": {},
             "namespaces": {},
             "tag": "main",
-            "file": "app/utils/application-rendering/foundation-builder.js",
+            "file": "app/services/configuration.js",
             "line": 3,
             "description": "Main module",
             "itemtype": "main"
@@ -698,29 +398,6 @@
             "file": "app/authenticators/authenticator.js",
             "line": 7,
             "description": "Security TODO",
-            "tag": "main",
-            "itemtype": "main"
-        },
-        "page": {
-            "name": "page",
-            "submodules": {},
-            "elements": {},
-            "classes": {
-                "Navbar-Octicons": 1,
-                "Navbar-Routes": 1,
-                "Login-Form-Component": 1,
-                "Application-Controller": 1,
-                "Alertify-Handler": 1,
-                "Page-Setup-Service": 1
-            },
-            "fors": {},
-            "is_submodule": 1,
-            "namespaces": {},
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/services/page-setup.js",
-            "line": 3,
-            "description": "Page TODO",
             "tag": "main",
             "itemtype": "main"
         },
@@ -761,6 +438,26 @@
             "tag": "main",
             "itemtype": "main"
         },
+        "page": {
+            "name": "page",
+            "submodules": {},
+            "elements": {},
+            "classes": {
+                "Login-Form-Component": 1,
+                "Application-Controller": 1,
+                "Alertify-Handler": 1
+            },
+            "fors": {},
+            "is_submodule": 1,
+            "namespaces": {},
+            "module": "explorviz",
+            "namespace": "",
+            "file": "app/mixins/alertify-handler.js",
+            "line": 6,
+            "description": "Page TODO",
+            "tag": "main",
+            "itemtype": "main"
+        },
         "settings": {
             "name": "settings",
             "submodules": {},
@@ -797,122 +494,11 @@
             "tag": "main",
             "itemtype": "main"
         },
-        "explorviz.extension.discovery": {
-            "name": "explorviz.extension.discovery",
-            "submodules": {
-                "model": 1
-            },
-            "elements": {},
-            "classes": {
-                "Process-Model": 1
-            },
-            "fors": {},
-            "namespaces": {},
-            "file": "app/models/procezz.js",
-            "line": 6
-        },
-        "model": {
-            "name": "model",
-            "submodules": {},
-            "elements": {},
-            "classes": {
-                "Process-Model": 1,
-                "Timestamp-Model": 1,
-                "user-Model": 1
-            },
-            "fors": {},
-            "is_submodule": 1,
-            "namespaces": {},
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/user.js",
-            "line": 7,
-            "description": "Model TODO",
-            "tag": "main",
-            "itemtype": "main"
-        },
-        "model.meta": {
-            "name": "model.meta",
-            "submodules": {},
-            "elements": {},
-            "classes": {
-                "AggregatedClazzCommunication-Model": 1,
-                "Application-Model": 1,
-                "ApplicationCommunication-Model": 1,
-                "Clazz-Model": 1,
-                "ClazzCommunication-Model": 1,
-                "Component-Model": 1,
-                "DatabaseQuery-Model": 1,
-                "DrawableClazzCommunication-Model": 1,
-                "Landscape-Model": 1,
-                "Node-Model": 1,
-                "NodeGroup-Model": 1,
-                "System-Model": 1,
-                "Trace-Model": 1,
-                "TraceStep-Model": 1
-            },
-            "fors": {},
-            "is_submodule": 1,
-            "namespaces": {},
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/tracestep.js",
-            "line": 6,
-            "description": "Model.Meta TODO",
-            "tag": "main",
-            "itemtype": "main"
-        },
-        "model.util": {
-            "name": "model.util",
-            "submodules": {},
-            "elements": {},
-            "classes": {
-                "BaseEntity-Model": 1,
-                "Draw3DNodeEntity-Model": 1,
-                "DrawEdgeEntity-Model": 1,
-                "DrawNodeEntity-Model": 1
-            },
-            "fors": {},
-            "is_submodule": 1,
-            "namespaces": {},
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/drawnodeentity.js",
-            "line": 6,
-            "description": "Model.Util TODO",
-            "tag": "main",
-            "itemtype": "main"
-        },
-        "util": {
-            "name": "util",
-            "submodules": {},
-            "elements": {},
-            "classes": {},
-            "fors": {},
-            "is_submodule": 1,
-            "namespaces": {},
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/utils/helpers/threejs-helpers.js",
-            "line": 3,
-            "description": "This method calculates a new color with a different brightness\ndegree as the passed color.",
-            "itemtype": "method",
-            "params": [
-                {
-                    "name": "threeColor",
-                    "description": "A Three.js color object",
-                    "type": "THREE.Color"
-                },
-                {
-                    "name": "brightnessDegree",
-                    "description": "The new brightness degree, e.g., '1.1' results in 10 percent lighter color",
-                    "type": "Number"
-                }
-            ]
-        },
         "ember": {
             "name": "ember",
-            "submodules": {},
+            "submodules": {
+                "undefined": 1
+            },
             "elements": {},
             "classes": {
                 "Application": 1,
@@ -921,8 +507,8 @@
             "fors": {},
             "namespaces": {},
             "tag": "module",
-            "file": "app/router.js",
-            "line": 5,
+            "file": "app/app.js",
+            "line": 6,
             "description": "This module holds JS-files that are necessary for every Ember application.",
             "itemtype": "main"
         },
@@ -939,6 +525,54 @@
             "file": "yuidoc-packages.js",
             "line": 39,
             "description": "Viz.Time TODO",
+            "tag": "main",
+            "itemtype": "main"
+        },
+        "model": {
+            "name": "model",
+            "submodules": {},
+            "elements": {},
+            "classes": {},
+            "fors": {},
+            "is_submodule": 1,
+            "namespaces": {},
+            "module": "explorviz",
+            "namespace": "",
+            "file": "yuidoc-packages.js",
+            "line": 89,
+            "description": "Model TODO",
+            "tag": "main",
+            "itemtype": "main"
+        },
+        "model.meta": {
+            "name": "model.meta",
+            "submodules": {},
+            "elements": {},
+            "classes": {},
+            "fors": {},
+            "is_submodule": 1,
+            "namespaces": {},
+            "module": "explorviz",
+            "namespace": "",
+            "file": "yuidoc-packages.js",
+            "line": 99,
+            "description": "Model.Meta TODO",
+            "tag": "main",
+            "itemtype": "main"
+        },
+        "model.util": {
+            "name": "model.util",
+            "submodules": {},
+            "elements": {},
+            "classes": {},
+            "fors": {},
+            "is_submodule": 1,
+            "namespaces": {},
+            "module": "explorviz",
+            "namespace": "",
+            "file": "yuidoc-packages.js",
+            "line": 109,
+            "description": "Model.Util TODO",
             "tag": "main",
             "itemtype": "main"
         }
@@ -1023,38 +657,6 @@
             "submodule": "security",
             "extends": "Ember-Simple-Auth.Authenticators.BaseAuthenticator"
         },
-        "Navbar-Octicons": {
-            "name": "Navbar-Octicons",
-            "shortname": "Navbar-Octicons",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/components/page-setup/navbar-octicons.js",
-            "line": 4,
-            "description": "This component renders all components (!), that are registered in \n{{#crossLink \"Page-Setup-Service\"}}{{/crossLink}}, as nav-octicons.",
-            "submodule": "page",
-            "extends": "Ember.Component"
-        },
-        "Navbar-Routes": {
-            "name": "Navbar-Routes",
-            "shortname": "Navbar-Routes",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/components/page-setup/navbar-routes.js",
-            "line": 4,
-            "description": "This component renders all routes (!), that are registered in \n{{#crossLink \"Page-Setup-Service\"}}{{/crossLink}}, as nav-links.",
-            "submodule": "page",
-            "extends": "Ember.Component"
-        },
         "Timeline-Component": {
             "name": "Timeline-Component",
             "shortname": "Timeline-Component",
@@ -1081,7 +683,7 @@
             "module": "explorviz",
             "namespace": "",
             "file": "app/components/visualization/rendering/application-rendering.js",
-            "line": 21,
+            "line": 20,
             "description": "Renderer for application visualization.",
             "submodule": "visualization.rendering",
             "extends": "Rendering-Core-Component"
@@ -1182,6 +784,21 @@
             "submodule": "visualization",
             "extends": "Ember.Controller"
         },
+        "Router": {
+            "name": "Router",
+            "shortname": "Router",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ember",
+            "namespace": "",
+            "file": "app/router.js",
+            "line": 4,
+            "description": "Ember router for mapping \"route\" and respective \"template\".",
+            "extends": "Ember.Router"
+        },
         "Alertify-Handler": {
             "name": "Alertify-Handler",
             "shortname": "Alertify-Handler",
@@ -1214,342 +831,6 @@
             "submodule": "visualization.rendering",
             "extends": "Ember.Mixin"
         },
-        "Process-Model": {
-            "name": "Process-Model",
-            "shortname": "Process-Model",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz.extension.discovery",
-            "namespace": "",
-            "file": "app/models/procezz.js",
-            "line": 6,
-            "description": "Ember model for a Process. This model is used as an abstraction for \ndistributed processes. \n\nTODO more description",
-            "submodule": "model",
-            "extends": "BaseModel"
-        },
-        "AggregatedClazzCommunication-Model": {
-            "name": "AggregatedClazzCommunication-Model",
-            "shortname": "AggregatedClazzCommunication-Model",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/aggregatedclazzcommunication.js",
-            "line": 6,
-            "description": "Ember model for an AggregatedClazzCommunication.\nUni-directional between two clazzes",
-            "submodule": "model.meta",
-            "extends": "DrawEdgeEntity-Model"
-        },
-        "Application-Model": {
-            "name": "Application-Model",
-            "shortname": "Application-Model",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/application.js",
-            "line": 6,
-            "description": "Ember model for an Application.",
-            "submodule": "model.meta",
-            "extends": "DrawNodeEntity-Model"
-        },
-        "ApplicationCommunication-Model": {
-            "name": "ApplicationCommunication-Model",
-            "shortname": "ApplicationCommunication-Model",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/applicationcommunication.js",
-            "line": 6,
-            "description": "Ember model for an ApplicationCommunication.",
-            "submodule": "model.meta",
-            "extends": "DrawEdgeEntity-Model"
-        },
-        "BaseEntity-Model": {
-            "name": "BaseEntity-Model",
-            "shortname": "BaseEntity-Model",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/baseentity.js",
-            "line": 5,
-            "description": "Ember model for a BaseEntity. Every element of ExplorViz's Meta-Model should\ninherit this class, since it might change and contain some useful data at\nsome point.",
-            "submodule": "model.util",
-            "extends": "DS.Model"
-        },
-        "Clazz-Model": {
-            "name": "Clazz-Model",
-            "shortname": "Clazz-Model",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/clazz.js",
-            "line": 6,
-            "description": "Ember model for a clazz.",
-            "submodule": "model.meta",
-            "extends": "Draw3DNodeEntity-Model"
-        },
-        "ClazzCommunication-Model": {
-            "name": "ClazzCommunication-Model",
-            "shortname": "ClazzCommunication-Model",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/clazzcommunication.js",
-            "line": 6,
-            "description": "Ember model for a ClazzCommunication.",
-            "submodule": "model.meta",
-            "extends": "DrawEdgeEntity-Model"
-        },
-        "Component-Model": {
-            "name": "Component-Model",
-            "shortname": "Component-Model",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/component.js",
-            "line": 7,
-            "description": "Ember model for a Component, e.g. a Java package.",
-            "submodule": "model.meta",
-            "extends": "Draw3DNodeEntity-Model"
-        },
-        "DatabaseQuery-Model": {
-            "name": "DatabaseQuery-Model",
-            "shortname": "DatabaseQuery-Model",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/databasequery.js",
-            "line": 6,
-            "description": "Ember model for a databaseQuery.",
-            "submodule": "model.meta",
-            "extends": "BaseEntity-Model"
-        },
-        "Draw3DNodeEntity-Model": {
-            "name": "Draw3DNodeEntity-Model",
-            "shortname": "Draw3DNodeEntity-Model",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/draw3dnodeentity.js",
-            "line": 8,
-            "description": "Ember model for a Draw3DNodeEntity. This model is inherited by all elements\nthat compose an application in the respective visualization.",
-            "submodule": "model.util",
-            "extends": "BaseEntity-Model"
-        },
-        "DrawableClazzCommunication-Model": {
-            "name": "DrawableClazzCommunication-Model",
-            "shortname": "DrawableClazzCommunication-Model",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/drawableclazzcommunication.js",
-            "line": 7,
-            "description": "Ember model for a DrawableClazzCommunication\nBi-directional between two clazzes",
-            "submodule": "model.meta",
-            "extends": "DrawEdgeEntity-Model"
-        },
-        "DrawEdgeEntity-Model": {
-            "name": "DrawEdgeEntity-Model",
-            "shortname": "DrawEdgeEntity-Model",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/drawedgeentity.js",
-            "line": 7,
-            "description": "Ember model for a DrawEdgeEntity. This model is mainly used for\ncommunications.",
-            "submodule": "model.util",
-            "extends": "BaseEntity-Model"
-        },
-        "DrawNodeEntity-Model": {
-            "name": "DrawNodeEntity-Model",
-            "shortname": "DrawNodeEntity-Model",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/drawnodeentity.js",
-            "line": 6,
-            "description": "Ember model for a DrawNodeEntity.",
-            "submodule": "model.util",
-            "extends": "BaseEntity-Model"
-        },
-        "Landscape-Model": {
-            "name": "Landscape-Model",
-            "shortname": "Landscape-Model",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/landscape.js",
-            "line": 6,
-            "description": "Ember model for a landscape.",
-            "submodule": "model.meta",
-            "extends": "BaseEntity-Model"
-        },
-        "Node-Model": {
-            "name": "Node-Model",
-            "shortname": "Node-Model",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/node.js",
-            "line": 7,
-            "description": "Ember model for a Node.",
-            "submodule": "model.meta",
-            "extends": "DrawNodeEntity-Model"
-        },
-        "NodeGroup-Model": {
-            "name": "NodeGroup-Model",
-            "shortname": "NodeGroup-Model",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/nodegroup.js",
-            "line": 7,
-            "description": "Ember model for a NodeGroup.",
-            "submodule": "model.meta",
-            "extends": "DrawNodeEntity-Model"
-        },
-        "System-Model": {
-            "name": "System-Model",
-            "shortname": "System-Model",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/system.js",
-            "line": 7,
-            "description": "Ember model for a System.",
-            "submodule": "model.meta",
-            "extends": "DrawNodeEntity-Model"
-        },
-        "Timestamp-Model": {
-            "name": "Timestamp-Model",
-            "shortname": "Timestamp-Model",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/timestamp.js",
-            "line": 6,
-            "description": "Ember model for a Timestamp.",
-            "submodule": "model",
-            "extends": "@extends BaseEntity-Model"
-        },
-        "Trace-Model": {
-            "name": "Trace-Model",
-            "shortname": "Trace-Model",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/trace.js",
-            "line": 7,
-            "description": "Ember model for a Trace.",
-            "submodule": "model.meta",
-            "extends": "BaseEntity-Model"
-        },
-        "TraceStep-Model": {
-            "name": "TraceStep-Model",
-            "shortname": "TraceStep-Model",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/tracestep.js",
-            "line": 6,
-            "description": "Ember model for a step in a trace.",
-            "submodule": "model.meta",
-            "extends": "BaseEntity-Model"
-        },
-        "user-Model": {
-            "name": "user-Model",
-            "shortname": "user-Model",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/models/user.js",
-            "line": 7,
-            "description": "Ember model for a User.",
-            "submodule": "model",
-            "extends": "@extends BaseEntity-Model"
-        },
         "Application-Route": {
             "name": "Application-Route",
             "shortname": "Application-Route",
@@ -1561,7 +842,7 @@
             "module": "explorviz",
             "namespace": "",
             "file": "app/routes/application.js",
-            "line": 6,
+            "line": 11,
             "description": "TODO",
             "extends": "Ember.Route"
         },
@@ -1591,7 +872,7 @@
             "module": "explorviz",
             "namespace": "",
             "file": "app/routes/configuration.js",
-            "line": 7,
+            "line": 5,
             "description": "TODO",
             "extends": "Ember.Route"
         },
@@ -1685,36 +966,6 @@
             "description": "TODO",
             "extends": "Application-Serializer"
         },
-        "Landscape-Repository-Service": {
-            "name": "Landscape-Repository-Service",
-            "shortname": "Landscape-Repository-Service",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/services/repos/landscape-repository.js",
-            "line": 4,
-            "description": "TODO",
-            "extends": "Ember.Service"
-        },
-        "Timestamp-Repository-Service": {
-            "name": "Timestamp-Repository-Service",
-            "shortname": "Timestamp-Repository-Service",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/services/repos/timestamp-repository.js",
-            "line": 6,
-            "description": "TODO",
-            "extends": "Ember.Service"
-        },
         "Configuration-Service": {
             "name": "Configuration-Service",
             "shortname": "Configuration-Service",
@@ -1727,38 +978,8 @@
             "namespace": "",
             "file": "app/services/configuration.js",
             "line": 3,
-            "description": "TODO",
+            "description": "The Configuration Service handles color settings for the visualization and configuration extensions",
             "extends": "Ember.Service"
-        },
-        "Page-Setup-Service": {
-            "name": "Page-Setup-Service",
-            "shortname": "Page-Setup-Service",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/services/page-setup.js",
-            "line": 3,
-            "description": "This service is used to",
-            "submodule": "page",
-            "extends": "Ember.Service"
-        },
-        "foundation-builder": {
-            "name": "foundation-builder",
-            "shortname": "foundation-builder",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/utils/application-rendering/foundation-builder.js",
-            "line": 3,
-            "description": "The foundation is the grey all-encompassing tile. It shows\nthe name of the previously clicked application and presents\ndata on mouse hovering. It simply is a container for actual\napplication data."
         },
         "Application": {
             "name": "Application",
@@ -1774,21 +995,6 @@
             "line": 6,
             "description": "Ember application is the starting point for every Ember application.",
             "extends": "Ember.Application"
-        },
-        "Router": {
-            "name": "Router",
-            "shortname": "Router",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "ember",
-            "namespace": "",
-            "file": "app/router.js",
-            "line": 5,
-            "description": "Ember router for mapping \"route\" and respective \"template\".",
-            "extends": "Ember.Router"
         }
     },
     "elements": {},
@@ -1829,7 +1035,7 @@
             "description": "This overridden Ember Component lifecycle hook is used\nto render the actual cytoscapeGraph",
             "itemtype": "method",
             "name": "didRender",
-            "class": "Navbar-Octicons",
+            "class": "Timeline-Component",
             "module": "explorviz"
         },
         {
@@ -1838,7 +1044,7 @@
             "description": "This overridden Ember Component lifecycle hook enables calling\ncustom cleanup code.",
             "itemtype": "method",
             "name": "willDestroyElement",
-            "class": "Navbar-Octicons",
+            "class": "Timeline-Component",
             "module": "explorviz"
         },
         {
@@ -1847,12 +1053,12 @@
             "description": "This function is called once on the didRender event.\nIt initializes cytoscape",
             "itemtype": "method",
             "name": "initCytoscape",
-            "class": "Navbar-Octicons",
+            "class": "Timeline-Component",
             "module": "explorviz"
         },
         {
             "file": "app/components/visualization/page-setup/timeline/timeline.js",
-            "line": 40,
+            "line": 42,
             "description": "This overridden Ember Component lifecycle hook enables calling\nExplorViz's setup code for actual rendering and custom listeners.",
             "itemtype": "method",
             "name": "didRender",
@@ -1862,7 +1068,7 @@
         },
         {
             "file": "app/components/visualization/page-setup/timeline/timeline.js",
-            "line": 54,
+            "line": 56,
             "description": "This overridden Ember Component lifecycle hook enables calling\nExplorViz's custom cleanup code.",
             "itemtype": "method",
             "name": "willDestroyElement",
@@ -1872,7 +1078,7 @@
         },
         {
             "file": "app/components/visualization/page-setup/timeline/timeline.js",
-            "line": 65,
+            "line": 67,
             "description": "This function is called when the willDestroyElement event is fired. Inherit this\nfunction to cleanup custom properties or unbind listener",
             "itemtype": "method",
             "name": "cleanup",
@@ -1882,7 +1088,7 @@
         },
         {
             "file": "app/components/visualization/page-setup/timeline/timeline.js",
-            "line": 77,
+            "line": 83,
             "description": "Inititializes \"updated\" listener",
             "itemtype": "method",
             "name": "initListener",
@@ -1892,7 +1098,7 @@
         },
         {
             "file": "app/components/visualization/page-setup/timeline/timeline.js",
-            "line": 95,
+            "line": 114,
             "description": "Initializes default settings for the chart",
             "itemtype": "method",
             "name": "initChart",
@@ -1902,7 +1108,7 @@
         },
         {
             "file": "app/components/visualization/page-setup/timeline/timeline.js",
-            "line": 125,
+            "line": 144,
             "description": "Renders the timeline chart",
             "itemtype": "method",
             "name": "renderChart",
@@ -1912,7 +1118,7 @@
         },
         {
             "file": "app/components/visualization/page-setup/timeline/timeline.js",
-            "line": 225,
+            "line": 244,
             "description": "Clickhandler for the chart",
             "itemtype": "method",
             "name": "chartClickhandler",
@@ -1929,7 +1135,7 @@
         },
         {
             "file": "app/components/visualization/page-setup/timeline/timeline.js",
-            "line": 298,
+            "line": 317,
             "description": "Resets the style of first data point in the chart",
             "itemtype": "method",
             "name": "unhighlightFirstDataPoint",
@@ -1939,7 +1145,7 @@
         },
         {
             "file": "app/components/visualization/page-setup/timeline/timeline.js",
-            "line": 320,
+            "line": 339,
             "description": "Unhighlights all previosly selected data points in the chart",
             "itemtype": "method",
             "name": "unhighlightAllDataPoints",
@@ -1949,7 +1155,7 @@
         },
         {
             "file": "app/components/visualization/page-setup/timeline/timeline.js",
-            "line": 338,
+            "line": 357,
             "description": "Updates the timeline chart when \"updated\" is triggered",
             "itemtype": "method",
             "name": "updateChart",
@@ -1959,7 +1165,7 @@
         },
         {
             "file": "app/components/visualization/page-setup/timeline/timeline.js",
-            "line": 386,
+            "line": 405,
             "description": "Called when a new timestamp is passed and the chart needs to be updated",
             "itemtype": "method",
             "name": "onUpdated",
@@ -1976,7 +1182,7 @@
         },
         {
             "file": "app/components/visualization/page-setup/timeline/timeline.js",
-            "line": 395,
+            "line": 414,
             "description": "Called when the landscapeListener.startVisualizationReload is executed",
             "itemtype": "method",
             "name": "onLandscapeListenerVisualizationResumed",
@@ -1986,7 +1192,7 @@
         },
         {
             "file": "app/components/visualization/page-setup/timeline/timeline.js",
-            "line": 403,
+            "line": 422,
             "description": "Displays a notifaction message  and resumes/pauses the visualization",
             "itemtype": "method",
             "name": "handleNotificationMessage",
@@ -2003,8 +1209,8 @@
         },
         {
             "file": "app/components/visualization/rendering/application-rendering.js",
-            "line": 139,
-            "description": "TODO",
+            "line": 209,
+            "description": "Persists rotation and removes foundation",
             "itemtype": "method",
             "name": "cleanAndUpdateScene",
             "class": "Application-Rendering-Component",
@@ -2013,8 +1219,8 @@
         },
         {
             "file": "app/components/visualization/rendering/application-rendering.js",
-            "line": 158,
-            "description": "TODO",
+            "line": 228,
+            "description": "Update latest application in landscape repo",
             "itemtype": "method",
             "name": "preProcessEntity",
             "class": "Application-Rendering-Component",
@@ -2023,8 +1229,8 @@
         },
         {
             "file": "app/components/visualization/rendering/application-rendering.js",
-            "line": 171,
-            "description": "TODO",
+            "line": 241,
+            "description": "Main method for adding THREE.js objects to application",
             "itemtype": "method",
             "name": "populateScene",
             "class": "Application-Rendering-Component",
@@ -2033,7 +1239,34 @@
         },
         {
             "file": "app/components/visualization/rendering/application-rendering.js",
-            "line": 415,
+            "line": 463,
+            "description": "Adds a Box to an application, therefore also computes color, size etc.",
+            "itemtype": "method",
+            "name": "createBox",
+            "params": [
+                {
+                    "name": "boxEntity",
+                    "description": "Component or clazz",
+                    "type": "EmberModel"
+                },
+                {
+                    "name": "color",
+                    "description": "Color for box",
+                    "type": "String"
+                },
+                {
+                    "name": "isClazz",
+                    "description": "Distinguishes between component and clazz",
+                    "type": "Boolean"
+                }
+            ],
+            "class": "Application-Rendering-Component",
+            "module": "explorviz",
+            "submodule": "visualization.rendering"
+        },
+        {
+            "file": "app/components/visualization/rendering/application-rendering.js",
+            "line": 515,
             "description": "Draws an small black arrow",
             "params": [
                 {
@@ -2060,8 +1293,8 @@
         },
         {
             "file": "app/components/visualization/rendering/landscape-rendering.js",
-            "line": 47,
-            "description": "TODO",
+            "line": 50,
+            "description": "Initialize listener functions, properties and utility objects",
             "itemtype": "method",
             "name": "initRendering",
             "class": "Landscape-Rendering-Component",
@@ -2070,7 +1303,7 @@
         },
         {
             "file": "app/components/visualization/rendering/landscape-rendering.js",
-            "line": 126,
+            "line": 138,
             "description": "TODO",
             "itemtype": "method",
             "name": "cleanAndUpdateScene",
@@ -2080,7 +1313,7 @@
         },
         {
             "file": "app/components/visualization/rendering/landscape-rendering.js",
-            "line": 141,
+            "line": 158,
             "description": "TODO",
             "itemtype": "method",
             "name": "populateScene",
@@ -2090,7 +1323,7 @@
         },
         {
             "file": "app/components/visualization/rendering/rendering-core.js",
-            "line": 65,
+            "line": 68,
             "description": "This overridden Ember Component lifecycle hook enables calling\nExplorViz's setup code for actual rendering and custom listeners.",
             "itemtype": "method",
             "name": "didRender",
@@ -2100,7 +1333,7 @@
         },
         {
             "file": "app/components/visualization/rendering/rendering-core.js",
-            "line": 79,
+            "line": 82,
             "description": "This overridden Ember Component lifecycle hook enables calling\nExplorViz's custom cleanup code.",
             "itemtype": "method",
             "name": "willDestroyElement",
@@ -2110,7 +1343,7 @@
         },
         {
             "file": "app/components/visualization/rendering/rendering-core.js",
-            "line": 91,
+            "line": 94,
             "description": "This function is called once on the didRender event. Inherit this function\nto call other important function, e.g. \"initInteraction\" as shown in\n{{#crossLink \"Landscape-Rendering/initInteraction:method\"}}{{/crossLink}}.",
             "itemtype": "method",
             "name": "initRenderings",
@@ -2120,7 +1353,7 @@
         },
         {
             "file": "app/components/visualization/rendering/rendering-core.js",
-            "line": 388,
+            "line": 390,
             "description": "This function is called once on initRendering and everytime at the end of\n\"cleanAndUpdateScene\". Inherit this function to insert objects in the\nThree.js scene. Have a look at\n{{#crossLink \"Landscape-Rendering/cleanAndUpdateScene:method\"}}\n{{/crossLink}}\nor\n{{#crossLink \"Application-Rendering/cleanAndUpdateScene:method\"}}\n{{/crossLink}}\nfor examplary usage.",
             "itemtype": "method",
             "name": "populateScene",
@@ -2130,7 +1363,7 @@
         },
         {
             "file": "app/components/visualization/rendering/rendering-core.js",
-            "line": 404,
+            "line": 405,
             "description": "This function is called when the willDestroyElement event is fired. Inherit this\nfunction to cleanup custom properties or unbind listener\nas shown in {{#crossLink \"Landscape-Rendering\"}}{{/crossLink}}.",
             "itemtype": "method",
             "name": "cleanup",
@@ -2140,7 +1373,7 @@
         },
         {
             "file": "app/components/visualization/rendering/rendering-core.js",
-            "line": 435,
+            "line": 436,
             "description": "Inherit this function to update the scene with a new renderingModel. It\nautomatically removes every mesh from the scene and finally calls\nthe (overridden) \"populateScene\" function. Add your custom code\nas shown in landscape-rendering.",
             "itemtype": "method",
             "name": "cleanAndUpdateScene",
@@ -2150,7 +1383,7 @@
         },
         {
             "file": "app/components/visualization/rendering/rendering-core.js",
-            "line": 467,
+            "line": 468,
             "description": "This function is called automatically when a new landscape was fetched. It\nis executed before\n{{#crossLink \"Rendering-Core/cleanAndUpdateScene:method\"}}{{/crossLink}}.\nInherit this function to preprocess the\n{{#crossLink \"Landscape\"}}{{/crossLink}} for rendering, e.g. filter some\nvalue.\n\nSee {{#crossLink \"Application-Rendering\"}}{{/crossLink}} for example usage.",
             "itemtype": "method",
             "name": "preProcessEntity",
@@ -2169,121 +1402,19 @@
             "submodule": "page"
         },
         {
-            "file": "app/models/baseentity.js",
-            "line": 17,
-            "description": "This attribute can be used by extensions to insert custom properties to any\nmeta-model object.",
-            "itemtype": "property",
-            "name": "extensionAttributes",
-            "type": "Array",
-            "class": "BaseEntity-Model",
-            "module": "explorviz",
-            "submodule": "model.util"
-        },
-        {
-            "file": "app/models/drawedgeentity.js",
-            "line": 19,
-            "description": "Indicates the line thickness (a.k.a. width) for a edge.",
-            "itemtype": "property",
-            "name": "lineThickness",
-            "type": "number",
-            "class": "DrawEdgeEntity-Model",
-            "module": "explorviz",
-            "submodule": "model.util"
-        },
-        {
-            "file": "app/models/drawedgeentity.js",
-            "line": 27,
-            "description": "Z-position of this edge.",
-            "itemtype": "property",
-            "name": "positionZ",
-            "type": "number",
-            "class": "DrawEdgeEntity-Model",
-            "module": "explorviz",
-            "submodule": "model.util"
-        },
-        {
-            "file": "app/models/drawedgeentity.js",
-            "line": 35,
-            "description": "All points of the edge.",
-            "itemtype": "property",
-            "name": "points",
-            "type": "objects",
-            "class": "DrawEdgeEntity-Model",
-            "module": "explorviz",
-            "submodule": "model.util"
-        },
-        {
-            "file": "app/models/event.js",
-            "line": 5,
-            "description": "<<<<<<< HEAD\n * Ember model for an event occurring in the landscape.\n *\n * @class Event-Model\n * @extends BaseEntity-Model\n *\n * @module explorviz\n * @submodule model.meta",
-            "class": "Landscape-Model",
-            "module": "explorviz"
-        },
-        {
-            "file": "app/services/repos/timestamp-repository.js",
-            "line": 25,
-            "description": "Triggers the 'updated' event in the timeline for updating the chart",
-            "itemtype": "method",
-            "name": "triggerTimelineUpdate",
-            "class": "Timestamp-Repository-Service",
-            "module": "explorviz"
-        },
-        {
-            "file": "app/services/visualization/application/highlighter.js",
-            "line": 184,
-            "description": "Marks communication between clazzes as NORMAL or TRANSPARENT for highlighting, only used if a component or clazz is highlighted",
-            "params": [
-                {
-                    "name": "selectedClazzes",
-                    "description": "Clazzes which are (indirectly) highlighted",
-                    "type": "*"
-                },
-                {
-                    "name": "communicatingClazzes",
-                    "description": "Clazzes which communicate with selectedClazzes (including selectedClazzes itself)",
-                    "type": "*"
-                }
-            ],
-            "itemtype": "method",
-            "name": "applyCommunicationHighlighting",
-            "class": "Configuration-Service",
-            "module": "explorviz"
-        },
-        {
-            "file": "app/services/visualization/application/highlighter.js",
-            "line": 217,
-            "description": "Sets all (nested) entities (components & clazzes) of a component either to TRANSPARENT or NORMAL for highlighting",
-            "params": [
-                {
-                    "name": "component",
-                    "description": "Component which entities shall be updated",
-                    "type": "Component"
-                },
-                {
-                    "name": "communicatingClazzes",
-                    "description": "Contains all clazzes which are involved in communication with highlighted entity",
-                    "type": "Set"
-                }
-            ],
-            "itemtype": "method",
-            "name": "applyNodeHighlighting",
-            "class": "Configuration-Service",
-            "module": "explorviz"
-        },
-        {
             "file": "app/services/configuration.js",
-            "line": 11,
-            "description": "Array for component-based settings dialogs. Any plugin may push a String \nwith the name of it's settings-component in this array. See \n\"color-picker-plugin\" for exemplary usage.",
+            "line": 10,
+            "description": "Array for component-based settings dialogs. Any extension may push an object  \nwith the name of it's settings-component and it's title in this array. See \nthe extension \"colorpicker\"\" for exemplary usage.",
             "itemtype": "property",
-            "name": "pluginSettings",
+            "name": "configurationExtensions",
             "type": "Array",
             "class": "Configuration-Service",
             "module": "explorviz"
         },
         {
             "file": "app/services/configuration.js",
-            "line": 22,
-            "description": "Default colors for landscape visualization",
+            "line": 20,
+            "description": "Current colors for landscape visualization",
             "itemtype": "property",
             "name": "landscapeColors",
             "type": "Object",
@@ -2292,8 +1423,8 @@
         },
         {
             "file": "app/services/configuration.js",
-            "line": 31,
-            "description": "Default colors for application visualization",
+            "line": 28,
+            "description": "Current colors for application visualization",
             "itemtype": "property",
             "name": "applicationColors",
             "type": "Object",
@@ -2301,30 +1432,42 @@
             "module": "explorviz"
         },
         {
-            "file": "app/services/page-setup.js",
-            "line": 15,
-            "description": "Latest fetched entity",
+            "file": "app/services/configuration.js",
+            "line": 36,
+            "description": "Default colors for landscape visualization",
             "itemtype": "property",
-            "name": "navbarRoutes",
-            "type": "Array",
-            "class": "Page-Setup-Service",
-            "module": "explorviz",
-            "submodule": "page"
+            "name": "landscapeColorsDefault",
+            "type": "Object",
+            "class": "Configuration-Service",
+            "module": "explorviz"
         },
         {
-            "file": "app/services/page-setup.js",
-            "line": 24,
-            "description": "Latest fetched entity",
+            "file": "app/services/configuration.js",
+            "line": 44,
+            "description": "Default colors for application visualization",
             "itemtype": "property",
-            "name": "navbarOcticons",
-            "type": "Array",
-            "class": "Page-Setup-Service",
-            "module": "explorviz",
-            "submodule": "page"
+            "name": "applicationColorsDefault",
+            "type": "Object",
+            "class": "Configuration-Service",
+            "module": "explorviz"
+        },
+        {
+            "file": "app/services/configuration.js",
+            "line": 60,
+            "description": "Sets the default visualization colors",
+            "class": "Configuration-Service",
+            "module": "explorviz"
+        },
+        {
+            "file": "app/services/configuration.js",
+            "line": 92,
+            "description": "Resets all visualization colors to default values\nNeeds to be a deep copy of the object, otherwise the default colors got overridden when the colors are in the extension",
+            "class": "Configuration-Service",
+            "module": "explorviz"
         },
         {
             "file": "app/services/reload-handler.js",
-            "line": 17,
+            "line": 27,
             "description": "Loads a landscape from the backend and triggers a visualization update",
             "itemtype": "method",
             "name": "loadLandscapeById",
@@ -2333,14 +1476,9 @@
                     "name": "timestamp",
                     "description": "",
                     "type": "*"
-                },
-                {
-                    "name": "appID",
-                    "description": "",
-                    "type": "*"
                 }
             ],
-            "class": "foundation-builder",
+            "class": "Application",
             "module": "explorviz"
         },
         {
@@ -2355,8 +1493,12 @@
     ],
     "warnings": [
         {
-            "message": "Missing item type\n<<<<<<< HEAD\n * Ember model for an event occurring in the landscape.\n *\n * @class Event-Model\n * @extends BaseEntity-Model\n *\n * @module explorviz\n * @submodule model.meta",
-            "line": " app/models/event.js:5"
+            "message": "Missing item type\nSets the default visualization colors",
+            "line": " app/services/configuration.js:60"
+        },
+        {
+            "message": "Missing item type\nResets all visualization colors to default values\nNeeds to be a deep copy of the object, otherwise the default colors got overridden when the colors are in the extension",
+            "line": " app/services/configuration.js:92"
         }
     ]
 }
