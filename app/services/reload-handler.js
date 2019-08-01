@@ -7,7 +7,7 @@ import AlertifyHandler from 'explorviz-frontend/mixins/alertify-handler';
 import ModelUpdater from 'explorviz-frontend/utils/model-update';
 
 
-export default Service.extend(AlertifyHandler, Evented, {
+export default class ReloadHandler extends Service.extend(AlertifyHandler, Evented, {
 
   store: service(),
   landscapeListener: service("landscape-listener"),
@@ -48,16 +48,16 @@ export default Service.extend(AlertifyHandler, Evented, {
     }
 
     function failure(e) {
-      self.set('landscapeRepo.latestLandscape', undefined);
+      self.set('landscapeRepo.latestLandscape', null);
       self.showAlertifyMessage("Landscape couldn't be requested!" +
         " Backend offline?");
       self.debug("Landscape couldn't be requested!", e);
     }
 
     function error(e) {
-      self.set('landscapeRepo.latestLandscape', undefined);
+      self.set('landscapeRepo.latestLandscape', null);
       self.debug("Error when fetching landscape: ", e);
     }
   }
 
-});
+}) {}
