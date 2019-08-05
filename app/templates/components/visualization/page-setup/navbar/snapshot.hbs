@@ -4,7 +4,14 @@
   </a>
 </li>
 <li class="nav-item">
-  <a class="nav-link-with-cursor" title="Load Snapshot" {{action "import"}}>
+  <Input
+    id="snapshotUpload"
+    onchange={{action "import"}}
+    type="file"
+    accept="application/json"
+    style="display:none"
+  />
+  <a class="nav-link-with-cursor" title="Load Snapshot" {{action "triggerImportDialog"}}>
     {{svg-jar "device-camera" class="octicon align-middle"}}
   </a>
 </li>
