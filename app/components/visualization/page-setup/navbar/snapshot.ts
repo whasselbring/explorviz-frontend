@@ -10,6 +10,7 @@ import FileDownloader from 'explorviz-frontend/services/file-downloader';
 import AlertifyHandler from 'explorviz-frontend/mixins/alertify-handler';
 
 import $ from 'jquery';
+import Highlighter from 'explorviz-frontend/services/visualization/application/highlighter';
 
 interface ApplicationSnapshot {
   landscapeTimestamp:number
@@ -25,10 +26,13 @@ export default class VisualizationPageSetupNavbarSnapshot extends Component.exte
   tagName = '';
 
   @service('repos/landscape-repository') landscapeRepository!: LandscapeRepository;
+  @service('visualization/application/highlighter') highlighter!: Highlighter;
   @service('rendering-service') renderingService!: RenderingService;
+  @service('store') store!: DS.Store;
+
   @service reloadHandler!: ReloadHandler;
   @service fileDownloader!: FileDownloader;
-  @service('store') store!: DS.Store;
+  @service landscapeListener!: any;
 
   debug = debugLogger();
 
@@ -86,6 +90,7 @@ export default class VisualizationPageSetupNavbarSnapshot extends Component.exte
 
     reader.onload = () => {
       let readerData = reader.result;
+      $("#snapshotUpload").val('');
 
       if(typeof readerData !== 'string') {
         this.showAlertifyError('File is not a valid Snapshot');
@@ -114,36 +119,43 @@ export default class VisualizationPageSetupNavbarSnapshot extends Component.exte
     }
   }
 
-  loadSnapshot(snapshot:ApplicationSnapshot) {
+  loadSnapshot(this: VisualizationPageSetupNavbarSnapshot, snapshot:ApplicationSnapshot) {
 
-    // TODO: handle asynchronicity of landscape loading and exceptions
-    get(this, 'reloadHandler').loadLandscapeById(snapshot.landscapeTimestamp);
+    get(this, 'landscapeListener').stopVisualizationReload();
 
-    let latestLandscape = get(get(this, 'landscapeRepository'), 'latestLandscape');
+    get(this, 'store').queryRecord('landscape', { timestamp: snapshot.landscapeTimestamp }).then((landscape) => {
+      let modelUpdater:any = get(get(this, 'reloadHandler'), 'modelUpdater');
+      if(modelUpdater !== null) {
+        modelUpdater.addDrawableCommunication();
 
-    if(latestLandscape !== null) {
-      let application = get(this, 'store').peekRecord('application', snapshot.applicationId);
-      if(application !== null) {
-        set(get(this, 'landscapeRepository'), 'latestApplication', application);
+        set(get(this, 'landscapeRepository'), 'latestLandscape', landscape);
+        get(this, 'landscapeRepository').triggerLatestLandscapeUpdate();
 
-        for (const [componentId, status] of Object.entries(snapshot.componentStates)) {
-          let component = get(this, 'store').peekRecord('component', componentId);
-          if(component !== null) {
-            component.setOpenedStatus(status);
-          }
-        }
-
-        if(snapshot.highlighted !== '') {
-          let component = get(this, 'store').peekRecord('component', snapshot.highlighted);
+        let application = get(this, 'store').peekRecord('application', snapshot.applicationId);
+        if(application !== null) {
+          set(get(this, 'landscapeRepository'), 'latestApplication', application);
   
-          if(component !== null) {
-            set(component, 'highlighted', true);
+          for (const [componentId, status] of Object.entries(snapshot.componentStates)) {
+            let component = get(this, 'store').peekRecord('component', componentId);
+            if(component !== null) {
+              component.setOpenedStatus(status);
+            }
           }
-        }
+  
+          if(snapshot.highlighted !== '') {
+            let component = get(this, 'store').peekRecord('component', snapshot.highlighted);
+    
+            if(component !== null) {
+              get(this, 'highlighter').highlight(component);
+            }
+          }
 
-        get(this, 'renderingService').reSetupScene();
+          get(this, 'renderingService').reSetupScene();
+        }
       }
-    }
+    }, () => {
+      this.showAlertifyError('Landscape not found');
+    });
   }
 
   isApplicationSnapshot(x: any): x is ApplicationSnapshot {
@@ -172,5 +184,5 @@ export default class VisualizationPageSetupNavbarSnapshot extends Component.exte
         return (c=='x' ? r :(r&0x3|0x8)).toString(16);
     });
     return uuid;
-}
+  }
 };
