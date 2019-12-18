@@ -104,24 +104,6 @@
             "fors": {},
             "namespaces": {}
         },
-        "app/controllers/application.js": {
-            "name": "app/controllers/application.js",
-            "modules": {},
-            "classes": {
-                "Application-Controller": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/controllers/configuration.js": {
-            "name": "app/controllers/configuration.js",
-            "modules": {},
-            "classes": {
-                "Configuration-Controller": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
         "app/controllers/visualization.js": {
             "name": "app/controllers/visualization.js",
             "modules": {},
@@ -135,24 +117,6 @@
             "name": "app/instance-initializers/router.js",
             "modules": {},
             "classes": {},
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/mixins/alertify-handler.js": {
-            "name": "app/mixins/alertify-handler.js",
-            "modules": {},
-            "classes": {
-                "Alertify-Handler": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/mixins/threejs-performance.js": {
-            "name": "app/mixins/threejs-performance.js",
-            "modules": {},
-            "classes": {
-                "ThreeJS-Performance-Mixin": 1
-            },
             "fors": {},
             "namespaces": {}
         },
@@ -237,22 +201,6 @@
             "fors": {},
             "namespaces": {}
         },
-        "app/services/configuration.js": {
-            "name": "app/services/configuration.js",
-            "modules": {},
-            "classes": {
-                "Configuration-Service": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "app/services/reload-handler.js": {
-            "name": "app/services/reload-handler.js",
-            "modules": {},
-            "classes": {},
-            "fors": {},
-            "namespaces": {}
-        },
         "app/utils/model-update.js": {
             "name": "app/utils/model-update.js",
             "modules": {},
@@ -278,6 +226,13 @@
             "fors": {},
             "namespaces": {}
         },
+        ".ember-cli.js": {
+            "name": ".ember-cli.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
         "yuidoc-packages.js": {
             "name": "yuidoc-packages.js",
             "modules": {
@@ -286,10 +241,10 @@
                 "security": 1,
                 "visualization.rendering": 1,
                 "page": 1,
-                "settings": 1,
                 "visualization": 1,
                 "ember": 1,
                 "visualization.timeshift": 1,
+                "settings": 1,
                 "model": 1,
                 "model.meta": 1,
                 "model.util": 1
@@ -342,9 +297,9 @@
                 "visualization.page-setup.timeline": 1,
                 "visualization.rendering": 1,
                 "page": 1,
-                "settings": 1,
                 "visualization": 1,
                 "visualization.timeshift": 1,
+                "settings": 1,
                 "model": 1,
                 "model.meta": 1,
                 "model.util": 1
@@ -352,7 +307,6 @@
             "elements": {},
             "classes": {
                 "Timestamp-Adapter": 1,
-                "Alertify-Handler": 1,
                 "Landscape-Adapter": 1,
                 "Authenticator": 1,
                 "Timeline-Component": 1,
@@ -360,26 +314,13 @@
                 "Landscape-Rendering-Component": 1,
                 "Rendering-Core-Component": 1,
                 "Login-Form-Component": 1,
-                "Application-Controller": 1,
-                "Configuration-Controller": 1,
-                "Visualization-Controller": 1,
-                "ThreeJS-Performance-Mixin": 1,
-                "Application-Route": 1,
-                "Badroute-Route": 1,
-                "Configuration-Route": 1,
-                "Index-Route": 1,
-                "Login-Route": 1,
-                "Visualization-Route": 1,
-                "Application-Serializer": 1,
-                "Landscape-Serializer": 1,
-                "System-Serializer": 1,
-                "Configuration-Service": 1
+                "Visualization-Controller": 1
             },
             "fors": {},
             "namespaces": {},
             "tag": "main",
-            "file": "app/services/configuration.js",
-            "line": 3,
+            "file": "app/controllers/visualization.js",
+            "line": 5,
             "description": "Main module",
             "itemtype": "main"
         },
@@ -413,7 +354,7 @@
             "namespaces": {},
             "module": "explorviz",
             "namespace": "",
-            "description": "Renderer for athe timeline.",
+            "description": "Renderer for the visualization timeline.",
             "file": "app/components/visualization/page-setup/timeline/timeline.js",
             "line": 11
         },
@@ -424,16 +365,15 @@
             "classes": {
                 "Application-Rendering-Component": 1,
                 "Landscape-Rendering-Component": 1,
-                "Rendering-Core-Component": 1,
-                "ThreeJS-Performance-Mixin": 1
+                "Rendering-Core-Component": 1
             },
             "fors": {},
             "is_submodule": 1,
             "namespaces": {},
             "module": "explorviz",
             "namespace": "",
-            "file": "app/mixins/threejs-performance.js",
-            "line": 7,
+            "file": "app/components/visualization/rendering/rendering-core.js",
+            "line": 9,
             "description": "Viz.Rend TODO",
             "tag": "main",
             "itemtype": "main"
@@ -443,36 +383,16 @@
             "submodules": {},
             "elements": {},
             "classes": {
-                "Login-Form-Component": 1,
-                "Application-Controller": 1,
-                "Alertify-Handler": 1
+                "Login-Form-Component": 1
             },
             "fors": {},
             "is_submodule": 1,
             "namespaces": {},
             "module": "explorviz",
             "namespace": "",
-            "file": "app/mixins/alertify-handler.js",
+            "file": "app/components/login-form.js",
             "line": 6,
             "description": "Page TODO",
-            "tag": "main",
-            "itemtype": "main"
-        },
-        "settings": {
-            "name": "settings",
-            "submodules": {},
-            "elements": {},
-            "classes": {
-                "Configuration-Controller": 1
-            },
-            "fors": {},
-            "is_submodule": 1,
-            "namespaces": {},
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/controllers/configuration.js",
-            "line": 4,
-            "description": "Settings TODO",
             "tag": "main",
             "itemtype": "main"
         },
@@ -489,20 +409,27 @@
             "module": "explorviz",
             "namespace": "",
             "file": "app/controllers/visualization.js",
-            "line": 6,
+            "line": 5,
             "description": "Viz TODO",
             "tag": "main",
             "itemtype": "main"
         },
         "ember": {
             "name": "ember",
-            "submodules": {
-                "undefined": 1
-            },
+            "submodules": {},
             "elements": {},
             "classes": {
-                "Application": 1,
-                "Router": 1
+                "Router": 1,
+                "Application-Route": 1,
+                "Badroute-Route": 1,
+                "Configuration-Route": 1,
+                "Index-Route": 1,
+                "Login-Route": 1,
+                "Visualization-Route": 1,
+                "Application-Serializer": 1,
+                "Landscape-Serializer": 1,
+                "System-Serializer": 1,
+                "Application": 1
             },
             "fors": {},
             "namespaces": {},
@@ -525,6 +452,22 @@
             "file": "yuidoc-packages.js",
             "line": 39,
             "description": "Viz.Time TODO",
+            "tag": "main",
+            "itemtype": "main"
+        },
+        "settings": {
+            "name": "settings",
+            "submodules": {},
+            "elements": {},
+            "classes": {},
+            "fors": {},
+            "is_submodule": 1,
+            "namespaces": {},
+            "module": "explorviz",
+            "namespace": "",
+            "file": "yuidoc-packages.js",
+            "line": 49,
+            "description": "Settings TODO",
             "tag": "main",
             "itemtype": "main"
         },
@@ -669,7 +612,7 @@
             "namespace": "",
             "file": "app/components/visualization/page-setup/timeline/timeline.js",
             "line": 11,
-            "description": "Renderer for athe timeline.",
+            "description": "Renderer for the visualization timeline.",
             "submodule": "visualization.page-setup.timeline"
         },
         "Application-Rendering-Component": {
@@ -683,7 +626,7 @@
             "module": "explorviz",
             "namespace": "",
             "file": "app/components/visualization/rendering/application-rendering.js",
-            "line": 20,
+            "line": 19,
             "description": "Renderer for application visualization.",
             "submodule": "visualization.rendering",
             "extends": "Rendering-Core-Component"
@@ -699,7 +642,7 @@
             "module": "explorviz",
             "namespace": "",
             "file": "app/components/visualization/rendering/landscape-rendering.js",
-            "line": 21,
+            "line": 20,
             "description": "Renderer for landscape visualization.",
             "submodule": "visualization.rendering",
             "extends": "Rendering-Core-Component"
@@ -736,38 +679,6 @@
             "submodule": "page",
             "extends": "Ember.Component"
         },
-        "Application-Controller": {
-            "name": "Application-Controller",
-            "shortname": "Application-Controller",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/controllers/application.js",
-            "line": 4,
-            "description": "TODO",
-            "submodule": "page",
-            "extends": "Ember.Controller"
-        },
-        "Configuration-Controller": {
-            "name": "Configuration-Controller",
-            "shortname": "Configuration-Controller",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/controllers/configuration.js",
-            "line": 4,
-            "description": "TODO",
-            "submodule": "settings",
-            "extends": "Ember.Controller"
-        },
         "Visualization-Controller": {
             "name": "Visualization-Controller",
             "shortname": "Visualization-Controller",
@@ -779,7 +690,7 @@
             "module": "explorviz",
             "namespace": "",
             "file": "app/controllers/visualization.js",
-            "line": 6,
+            "line": 5,
             "description": "TODO",
             "submodule": "visualization",
             "extends": "Ember.Controller"
@@ -799,38 +710,6 @@
             "description": "Ember router for mapping \"route\" and respective \"template\".",
             "extends": "Ember.Router"
         },
-        "Alertify-Handler": {
-            "name": "Alertify-Handler",
-            "shortname": "Alertify-Handler",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/mixins/alertify-handler.js",
-            "line": 6,
-            "description": "TODO",
-            "submodule": "page",
-            "extends": "Ember.Mixin"
-        },
-        "ThreeJS-Performance-Mixin": {
-            "name": "ThreeJS-Performance-Mixin",
-            "shortname": "ThreeJS-Performance-Mixin",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/mixins/threejs-performance.js",
-            "line": 7,
-            "description": "TODO",
-            "submodule": "visualization.rendering",
-            "extends": "Ember.Mixin"
-        },
         "Application-Route": {
             "name": "Application-Route",
             "shortname": "Application-Route",
@@ -839,10 +718,10 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "explorviz",
+            "module": "ember",
             "namespace": "",
             "file": "app/routes/application.js",
-            "line": 11,
+            "line": 5,
             "description": "TODO",
             "extends": "Ember.Route"
         },
@@ -854,7 +733,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "explorviz",
+            "module": "ember",
             "namespace": "",
             "file": "app/routes/badroute.js",
             "line": 3,
@@ -869,7 +748,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "explorviz",
+            "module": "ember",
             "namespace": "",
             "file": "app/routes/configuration.js",
             "line": 5,
@@ -884,7 +763,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "explorviz",
+            "module": "ember",
             "namespace": "",
             "file": "app/routes/index.js",
             "line": 3,
@@ -899,7 +778,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "explorviz",
+            "module": "ember",
             "namespace": "",
             "file": "app/routes/login.js",
             "line": 5,
@@ -914,7 +793,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "explorviz",
+            "module": "ember",
             "namespace": "",
             "file": "app/routes/visualization.js",
             "line": 5,
@@ -929,7 +808,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "explorviz",
+            "module": "ember",
             "namespace": "",
             "file": "app/serializers/application.js",
             "line": 5,
@@ -944,7 +823,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "explorviz",
+            "module": "ember",
             "namespace": "",
             "file": "app/serializers/landscape.js",
             "line": 3,
@@ -959,27 +838,12 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "explorviz",
+            "module": "ember",
             "namespace": "",
             "file": "app/serializers/system.js",
             "line": 3,
             "description": "TODO",
             "extends": "Application-Serializer"
-        },
-        "Configuration-Service": {
-            "name": "Configuration-Service",
-            "shortname": "Configuration-Service",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "explorviz",
-            "namespace": "",
-            "file": "app/services/configuration.js",
-            "line": 3,
-            "description": "The Configuration Service handles color settings for the visualization and configuration extensions",
-            "extends": "Ember.Service"
         },
         "Application": {
             "name": "Application",
@@ -1000,6 +864,21 @@
     "elements": {},
     "classitems": [
         {
+            "file": "app/adapters/timestamp.js",
+            "line": 31,
+            "description": "Queries landscape or replay timestamps",
+            "params": [
+                {
+                    "name": "query",
+                    "description": "",
+                    "type": "*"
+                }
+            ],
+            "class": "Timestamp-Adapter",
+            "module": "explorviz",
+            "submodule": "network"
+        },
+        {
             "file": "app/authenticators/authenticator.js",
             "line": 30,
             "description": "TODO",
@@ -1011,7 +890,7 @@
         },
         {
             "file": "app/authenticators/authenticator.js",
-            "line": 84,
+            "line": 85,
             "description": "TODO",
             "itemtype": "method",
             "name": "authenticate",
@@ -1021,7 +900,7 @@
         },
         {
             "file": "app/authenticators/authenticator.js",
-            "line": 124,
+            "line": 125,
             "description": "TODO",
             "itemtype": "method",
             "name": "invalidate",
@@ -1229,7 +1108,7 @@
         },
         {
             "file": "app/components/visualization/rendering/application-rendering.js",
-            "line": 241,
+            "line": 248,
             "description": "Main method for adding THREE.js objects to application",
             "itemtype": "method",
             "name": "populateScene",
@@ -1239,7 +1118,7 @@
         },
         {
             "file": "app/components/visualization/rendering/application-rendering.js",
-            "line": 463,
+            "line": 470,
             "description": "Adds a Box to an application, therefore also computes color, size etc.",
             "itemtype": "method",
             "name": "createBox",
@@ -1266,7 +1145,7 @@
         },
         {
             "file": "app/components/visualization/rendering/application-rendering.js",
-            "line": 515,
+            "line": 522,
             "description": "Draws an small black arrow",
             "params": [
                 {
@@ -1293,7 +1172,7 @@
         },
         {
             "file": "app/components/visualization/rendering/landscape-rendering.js",
-            "line": 50,
+            "line": 49,
             "description": "Initialize listener functions, properties and utility objects",
             "itemtype": "method",
             "name": "initRendering",
@@ -1303,7 +1182,7 @@
         },
         {
             "file": "app/components/visualization/rendering/landscape-rendering.js",
-            "line": 138,
+            "line": 137,
             "description": "TODO",
             "itemtype": "method",
             "name": "cleanAndUpdateScene",
@@ -1313,7 +1192,15 @@
         },
         {
             "file": "app/components/visualization/rendering/landscape-rendering.js",
-            "line": 158,
+            "line": 150,
+            "description": "The landscape is bound in the template, e.g., landscape=landscapeRepo.latestLandscape",
+            "class": "Landscape-Rendering-Component",
+            "module": "explorviz",
+            "submodule": "visualization.rendering"
+        },
+        {
+            "file": "app/components/visualization/rendering/landscape-rendering.js",
+            "line": 166,
             "description": "TODO",
             "itemtype": "method",
             "name": "populateScene",
@@ -1323,7 +1210,7 @@
         },
         {
             "file": "app/components/visualization/rendering/rendering-core.js",
-            "line": 68,
+            "line": 70,
             "description": "This overridden Ember Component lifecycle hook enables calling\nExplorViz's setup code for actual rendering and custom listeners.",
             "itemtype": "method",
             "name": "didRender",
@@ -1333,7 +1220,7 @@
         },
         {
             "file": "app/components/visualization/rendering/rendering-core.js",
-            "line": 82,
+            "line": 84,
             "description": "This overridden Ember Component lifecycle hook enables calling\nExplorViz's custom cleanup code.",
             "itemtype": "method",
             "name": "willDestroyElement",
@@ -1343,7 +1230,7 @@
         },
         {
             "file": "app/components/visualization/rendering/rendering-core.js",
-            "line": 94,
+            "line": 96,
             "description": "This function is called once on the didRender event. Inherit this function\nto call other important function, e.g. \"initInteraction\" as shown in\n{{#crossLink \"Landscape-Rendering/initInteraction:method\"}}{{/crossLink}}.",
             "itemtype": "method",
             "name": "initRenderings",
@@ -1353,7 +1240,7 @@
         },
         {
             "file": "app/components/visualization/rendering/rendering-core.js",
-            "line": 390,
+            "line": 409,
             "description": "This function is called once on initRendering and everytime at the end of\n\"cleanAndUpdateScene\". Inherit this function to insert objects in the\nThree.js scene. Have a look at\n{{#crossLink \"Landscape-Rendering/cleanAndUpdateScene:method\"}}\n{{/crossLink}}\nor\n{{#crossLink \"Application-Rendering/cleanAndUpdateScene:method\"}}\n{{/crossLink}}\nfor examplary usage.",
             "itemtype": "method",
             "name": "populateScene",
@@ -1363,7 +1250,7 @@
         },
         {
             "file": "app/components/visualization/rendering/rendering-core.js",
-            "line": 405,
+            "line": 424,
             "description": "This function is called when the willDestroyElement event is fired. Inherit this\nfunction to cleanup custom properties or unbind listener\nas shown in {{#crossLink \"Landscape-Rendering\"}}{{/crossLink}}.",
             "itemtype": "method",
             "name": "cleanup",
@@ -1373,7 +1260,7 @@
         },
         {
             "file": "app/components/visualization/rendering/rendering-core.js",
-            "line": 436,
+            "line": 457,
             "description": "Inherit this function to update the scene with a new renderingModel. It\nautomatically removes every mesh from the scene and finally calls\nthe (overridden) \"populateScene\" function. Add your custom code\nas shown in landscape-rendering.",
             "itemtype": "method",
             "name": "cleanAndUpdateScene",
@@ -1383,7 +1270,7 @@
         },
         {
             "file": "app/components/visualization/rendering/rendering-core.js",
-            "line": 468,
+            "line": 489,
             "description": "This function is called automatically when a new landscape was fetched. It\nis executed before\n{{#crossLink \"Rendering-Core/cleanAndUpdateScene:method\"}}{{/crossLink}}.\nInherit this function to preprocess the\n{{#crossLink \"Landscape\"}}{{/crossLink}} for rendering, e.g. filter some\nvalue.\n\nSee {{#crossLink \"Application-Rendering\"}}{{/crossLink}} for example usage.",
             "itemtype": "method",
             "name": "preProcessEntity",
@@ -1402,103 +1289,34 @@
             "submodule": "page"
         },
         {
-            "file": "app/services/configuration.js",
-            "line": 10,
-            "description": "Array for component-based settings dialogs. Any extension may push an object  \nwith the name of it's settings-component and it's title in this array. See \nthe extension \"colorpicker\"\" for exemplary usage.",
-            "itemtype": "property",
-            "name": "configurationExtensions",
-            "type": "Array",
-            "class": "Configuration-Service",
-            "module": "explorviz"
-        },
-        {
-            "file": "app/services/configuration.js",
-            "line": 20,
-            "description": "Current colors for landscape visualization",
-            "itemtype": "property",
-            "name": "landscapeColors",
-            "type": "Object",
-            "class": "Configuration-Service",
-            "module": "explorviz"
-        },
-        {
-            "file": "app/services/configuration.js",
-            "line": 28,
-            "description": "Current colors for application visualization",
-            "itemtype": "property",
-            "name": "applicationColors",
-            "type": "Object",
-            "class": "Configuration-Service",
-            "module": "explorviz"
-        },
-        {
-            "file": "app/services/configuration.js",
-            "line": 36,
-            "description": "Default colors for landscape visualization",
-            "itemtype": "property",
-            "name": "landscapeColorsDefault",
-            "type": "Object",
-            "class": "Configuration-Service",
-            "module": "explorviz"
-        },
-        {
-            "file": "app/services/configuration.js",
-            "line": 44,
-            "description": "Default colors for application visualization",
-            "itemtype": "property",
-            "name": "applicationColorsDefault",
-            "type": "Object",
-            "class": "Configuration-Service",
-            "module": "explorviz"
-        },
-        {
-            "file": "app/services/configuration.js",
-            "line": 60,
-            "description": "Sets the default visualization colors",
-            "class": "Configuration-Service",
-            "module": "explorviz"
-        },
-        {
-            "file": "app/services/configuration.js",
-            "line": 92,
-            "description": "Resets all visualization colors to default values\nNeeds to be a deep copy of the object, otherwise the default colors got overridden when the colors are in the extension",
-            "class": "Configuration-Service",
-            "module": "explorviz"
-        },
-        {
-            "file": "app/services/reload-handler.js",
-            "line": 27,
-            "description": "Loads a landscape from the backend and triggers a visualization update",
-            "itemtype": "method",
-            "name": "loadLandscapeById",
-            "params": [
-                {
-                    "name": "timestamp",
-                    "description": "",
-                    "type": "*"
-                }
-            ],
-            "class": "Application",
-            "module": "explorviz"
-        },
-        {
             "file": "app/utils/model-update.js",
             "line": 14,
             "description": "Computes (possibly) bidirectional communication and saves \nit as a model. Later used to draw communication between clazzes",
             "itemtype": "method",
             "name": "addDrawableCommunication",
             "class": "Application",
-            "module": "explorviz"
+            "module": "ember"
+        },
+        {
+            "file": ".ember-cli.js",
+            "line": 2,
+            "description": "Ember CLI sends analytics information by default. The data is completely\nanonymous, but there are times when you might want to disable this behavior.\n\nSetting `disableAnalytics` to true will prevent any data from being sent.",
+            "class": "",
+            "module": "ember"
         }
     ],
     "warnings": [
         {
-            "message": "Missing item type\nSets the default visualization colors",
-            "line": " app/services/configuration.js:60"
+            "message": "Missing item type\nQueries landscape or replay timestamps",
+            "line": " app/adapters/timestamp.js:31"
         },
         {
-            "message": "Missing item type\nResets all visualization colors to default values\nNeeds to be a deep copy of the object, otherwise the default colors got overridden when the colors are in the extension",
-            "line": " app/services/configuration.js:92"
+            "message": "Missing item type\nThe landscape is bound in the template, e.g., landscape=landscapeRepo.latestLandscape",
+            "line": " app/components/visualization/rendering/landscape-rendering.js:150"
+        },
+        {
+            "message": "Missing item type\nEmber CLI sends analytics information by default. The data is completely\nanonymous, but there are times when you might want to disable this behavior.\n\nSetting `disableAnalytics` to true will prevent any data from being sent.",
+            "line": " .ember-cli.js:2"
         }
     ]
 }

@@ -26,7 +26,7 @@
             </li>
         </div>
         <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
-            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/Agent-Adapter", "classes/Alertify-Handler", "classes/Application-Controller", "classes/Application-Rendering-Component", "classes/Application-Route", "classes/Application-Serializer", "classes/Authenticator", "classes/Badroute-Route", "classes/Configuration-Controller", "classes/Configuration-Route", "classes/Configuration-Service", "classes/Index-Route", "classes/Landscape-Adapter", "classes/Landscape-Rendering-Component", "classes/Landscape-Serializer", "classes/Login-Form-Component", "classes/Login-Route", "classes/Procezz-Adapter", "classes/Rendering-Core-Component", "classes/Router", "classes/System-Serializer", "classes/ThreeJS-Performance-Mixin", "classes/Timeline-Component", "classes/Timestamp-Adapter", "classes/Visualization-Controller", "classes/Visualization-Route", "modules/explorviz", "modules/explorviz.discovery", "modules/model", "modules/model.meta", "modules/model.util", "modules/network", "modules/page", "modules/security", "modules/settings", "modules/visualization", "modules/visualization.page-setup.timeline", "modules/visualization.rendering", "modules/visualization.timeshift"]'>
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/Agent-Adapter", "classes/Application-Rendering-Component", "classes/Application-Route", "classes/Application-Serializer", "classes/Authenticator", "classes/Badroute-Route", "classes/Configuration-Route", "classes/Index-Route", "classes/Landscape-Adapter", "classes/Landscape-Rendering-Component", "classes/Landscape-Serializer", "classes/Login-Form-Component", "classes/Login-Route", "classes/Procezz-Adapter", "classes/Rendering-Core-Component", "classes/Router", "classes/System-Serializer", "classes/Timeline-Component", "classes/Timestamp-Adapter", "classes/Visualization-Controller", "classes/Visualization-Route", "modules/explorviz", "modules/explorviz.discovery", "modules/model", "modules/model.meta", "modules/model.util", "modules/network", "modules/page", "modules/security", "modules/settings", "modules/visualization", "modules/visualization.page-setup.timeline", "modules/visualization.rendering", "modules/visualization.timeshift"]'>
         </form>
     </div>
 </div>
@@ -49,16 +49,12 @@
 	                <div class="tab-pane active" id="classes">
 	                    <ul id="api-classes" class="nav nav-list">
 	                            <li><a href="../classes/Agent-Adapter.html">Agent-Adapter</a></li>
-	                            <li><a href="../classes/Alertify-Handler.html">Alertify-Handler</a></li>
-	                            <li><a href="../classes/Application-Controller.html">Application-Controller</a></li>
 	                            <li><a href="../classes/Application-Rendering-Component.html">Application-Rendering-Component</a></li>
 	                            <li><a href="../classes/Application-Route.html">Application-Route</a></li>
 	                            <li><a href="../classes/Application-Serializer.html">Application-Serializer</a></li>
 	                            <li><a href="../classes/Authenticator.html">Authenticator</a></li>
 	                            <li><a href="../classes/Badroute-Route.html">Badroute-Route</a></li>
-	                            <li><a href="../classes/Configuration-Controller.html">Configuration-Controller</a></li>
 	                            <li><a href="../classes/Configuration-Route.html">Configuration-Route</a></li>
-	                            <li><a href="../classes/Configuration-Service.html">Configuration-Service</a></li>
 	                            <li><a href="../classes/Index-Route.html">Index-Route</a></li>
 	                            <li><a href="../classes/Landscape-Adapter.html">Landscape-Adapter</a></li>
 	                            <li><a href="../classes/Landscape-Rendering-Component.html">Landscape-Rendering-Component</a></li>
@@ -69,7 +65,6 @@
 	                            <li><a href="../classes/Rendering-Core-Component.html">Rendering-Core-Component</a></li>
 	                            <li><a href="../classes/Router.html">Router</a></li>
 	                            <li><a href="../classes/System-Serializer.html">System-Serializer</a></li>
-	                            <li><a href="../classes/ThreeJS-Performance-Mixin.html">ThreeJS-Performance-Mixin</a></li>
 	                            <li><a href="../classes/Timeline-Component.html">Timeline-Component</a></li>
 	                            <li><a href="../classes/Timestamp-Adapter.html">Timestamp-Adapter</a></li>
 	                            <li><a href="../classes/Visualization-Controller.html">Visualization-Controller</a></li>
@@ -132,14 +127,8 @@
 <div class="file">
     <pre class="prettyprint linenums">
 import Route from &#x27;@ember/routing/route&#x27;;
-import {inject as service} from &#x27;@ember/service&#x27;;
-import { isEmpty } from &#x27;@ember/utils&#x27;;
-import ApplicationRouteMixin from 
-&#x27;ember-simple-auth/mixins/application-route-mixin&#x27;;
-import { resolve, all } from &#x27;rsvp&#x27;;
-import ENV from &#x27;explorviz-frontend/config/environment&#x27;;
- 
-const { environment } = ENV;
+import ApplicationRouteMixin from
+  &#x27;ember-simple-auth/mixins/application-route-mixin&#x27;;
 
 /**
 * TODO
@@ -150,68 +139,22 @@ const { environment } = ENV;
 export default Route.extend(ApplicationRouteMixin, {
 
   routeAfterAuthentication: &#x27;visualization&#x27;,
-  session: service(),
-  currentUser: service(),
-  userSettings: service(),
 
-  beforeModel() {
-    if(environment === &#x27;test&#x27;)
-      return resolve();
-
-    return new all([
-      this._loadCurrentUser(),
-      this._loadCurrentUserPreferences(),
-      this._loadSettingsAndTypes()
-    ]);
+  async beforeModel() {
+    await this.controllerFor(&#x27;application&#x27;).get(&#x27;loadUserAndSettings&#x27;).perform();
   },
 
-  sessionAuthenticated() {
-    this._super(...arguments);
+  async sessionAuthenticated() {
+    await this.controllerFor(&#x27;application&#x27;).get(&#x27;loadUserAndSettings&#x27;).perform();
 
-    if(environment === &#x27;test&#x27;)
-      return;
-
-    this._loadCurrentUser();
-    this._loadCurrentUserPreferences();
-    this._loadSettingsAndTypes();
-  },
-
-  _loadCurrentUser() {
-    return this.get(&#x27;currentUser&#x27;).load().catch(() =&gt; this.get(&#x27;session&#x27;).invalidate({message: &#x27;User could not be loaded&#x27;}));
-  },
-
-  _loadCurrentUserPreferences() {
-    let userId = this.get(&#x27;session&#x27;).get(&#x27;session.content.authenticated.rawUserData.data.id&#x27;);
-    if (!isEmpty(userId)) {
-      return this.store.findAll(&#x27;userpreference&#x27;, { adapterOptions: {userId: userId} }).catch(() =&gt; this.get(&#x27;session&#x27;).invalidate({message: &#x27;User preferences could not be loaded&#x27;}));
-    } else {
-      this.get(&#x27;session&#x27;).invalidate({message: &#x27;Session invalid&#x27;});
-      return resolve();
-    }
-  },
-
-  _loadSettingsAndTypes() {
-    let settings;
-    // request all settings and load into store
-    settings = this.get(&#x27;store&#x27;).query(&#x27;settingsinfo&#x27;, 1);
-    // get all setting types and save them for future access
-    settings.then(() =&gt; {
-      let types = new Set();
-      for(let i = 0; i &lt; settings.get(&#x27;length&#x27;); i++) {
-        types.add(settings.objectAt(i).constructor.modelName);
-      }
-      this.get(&#x27;userSettings&#x27;).set(&#x27;types&#x27;, types);
-    }, () =&gt; {
-      this.get(&#x27;session&#x27;).invalidate({message: &#x27;Settings could not be loaded&#x27;});
-    });
-    return resolve();
+    this.transitionTo(this.routeAfterAuthentication);
   },
 
   actions: {
-      logout() {
-        this.get(&#x27;session&#x27;).invalidate({message: &quot;Logout successful&quot;});
-      }
+    logout() {
+      this.get(&#x27;session&#x27;).invalidate({ message: &quot;Logout successful&quot; });
     }
+  }
 
 });
     </pre>

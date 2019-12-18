@@ -2,16 +2,12 @@ YUI.add("yuidoc-meta", function(Y) {
    Y.YUIDoc = { meta: {
     "classes": [
         "Agent-Adapter",
-        "Alertify-Handler",
-        "Application-Controller",
         "Application-Rendering-Component",
         "Application-Route",
         "Application-Serializer",
         "Authenticator",
         "Badroute-Route",
-        "Configuration-Controller",
         "Configuration-Route",
-        "Configuration-Service",
         "Index-Route",
         "Landscape-Adapter",
         "Landscape-Rendering-Component",
@@ -22,7 +18,6 @@ YUI.add("yuidoc-meta", function(Y) {
         "Rendering-Core-Component",
         "Router",
         "System-Serializer",
-        "ThreeJS-Performance-Mixin",
         "Timeline-Component",
         "Timestamp-Adapter",
         "Visualization-Controller",
@@ -96,7 +91,7 @@ YUI.add("yuidoc-meta", function(Y) {
         {
             "displayName": "visualization.page-setup.timeline",
             "name": "visualization.page-setup.timeline",
-            "description": "Renderer for athe timeline."
+            "description": "Renderer for the visualization timeline."
         },
         {
             "displayName": "visualization.rendering",
